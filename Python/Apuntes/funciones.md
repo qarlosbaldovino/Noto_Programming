@@ -1,16 +1,27 @@
-# Funciones
+# Funciones PYTHON <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/960px-Python-logo-notext.svg.png" width="30">
+
+1.  [Funciones interesantes](#id1)
+    *   [Maketrans y translate](#id1)
+    *   [For](#id1.2)
+    *   [Funciones Lambda](#id1.3)
+2.  [Listas](#id2)
+    *   [Enumerate](#id2.2)
+    *   [Zip](#id2.3)
+
+<div id = 'id1'/>
+
 ## Funciones interesantes
 ### str.**maketrans** y **translate**
  ```python
  testword = str.maketrans('aei' + 'aei'.upper() ,"AEI" + "AEI".lower())
 ```
-_lo que hace __maketrans__ es hacer el translado de palabras a su CODIGO ASCII y hacer una especie de __diccionario__ con la primer letra del primer parametro y la primer letra del segundo parametro, y así con todos los restantes._
+_Lo que hace __maketrans__ es hacer el translado de palabras a su CODIGO ASCII y hacer una especie de __diccionario__ con la primer letra del primer parametro y la primer letra del segundo parametro, y así con todos los restantes._
 
 ```
 {97: 65, 101: 69, 105: 73, 65: 97, 69: 101, 73: 105}
 a    A    e    E   i   I    A   a   E   e   I    i
 ```
-_97 es 'a' y 65 es 'A'...
+_97 es 'a' y 65 es 'A'_
 
 Esto nos va a servir para hacer la traduccion de nuestra palabra con __translate()__
 
@@ -18,15 +29,17 @@ Esto nos va a servir para hacer la traduccion de nuestra palabra con __translate
 new_word = 'cACa'.translate(testword)
 print(new_word)
 ```
-_tenemos la palabra "cACa" y vamos a usar __translate__ y le vamos a pasar como parametro al diccionario que hemos creado: _testword_
+_tenemos la palabra "cACa" y vamos a usar __translate__ y le vamos a pasar como parametro al diccionario que hemos creado: _testword__
 
-_Lo que estamos por hacer es cuando tenemos 'A', nos pasará a: 'a'. y viceversa. Tenemos finalmente este resultado:
+_Lo que estamos por hacer es cuando tenemos 'A', nos pasará a: 'a'. y viceversa. Tenemos finalmente este resultado:_
 
 ```
 caCA
 ```
 ---
-### **for**
+<div id = 'id1.2'/>
+
+### **for** 
 Formas de usarlo:
 ```python
 numeros = [1,2,3,4,5]
@@ -40,6 +53,7 @@ even_numbers = [num for num in range(21) if num % 2 == 0]
 print(even_numbers)
 ```
 ---
+<div id = 'id1.3'/>
 
 ### **Funciones Lambda**
 
@@ -59,6 +73,8 @@ _output_
 [1, 4, 9, 16, 25]
 ```
 ---
+<div id = 'id2'/>
+
 ## Listas
 ### **append()** y **insert()**
 ```python
@@ -79,6 +95,8 @@ _output_
 ['Cantonese', 'Spanish', 'English', 'Japanese', 'Chinese']
 ```
 ---
+<div id = 'id2.2'/>
+
 ### **enumerate**
 ```python
 languages = ['Spanish', 'English', 'Japanese']
@@ -96,6 +114,8 @@ for index, lang in enumerate(languages, start = 1):
     print(index,lang)
 ```
 ---
+<div id = 'id2.3'/>
+
 ### **Zip**
 ```python
 a = ("John", "Charles", "Mike")
@@ -113,10 +133,4 @@ _output_
 ```
 
 
-_En este caso, vemos que _"Qoqo"_ sobra y no lo imprime porque no puede unirlo con otro valor del primer parámetro (_a_).
-
-**_Otro uso:_**
-```python
-for index, lang in enumerate(languages, start = 1):
-    print(index,lang)
-```
+_En este caso, vemos que _"Qoqo"_ sobra y no lo imprime porque no puede unirlo con otro valor del primer parámetro (_a_)_
