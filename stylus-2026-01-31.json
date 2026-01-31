@@ -1,0 +1,318 @@
+[
+  {
+    "settings": {
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "keepAlive": 0,
+      "keepAliveIdle": false,
+      "newStyleAsUsercss": true,
+      "openEditInWindow": true,
+      "openEditInWindow.popup": false,
+      "patchCsp": false,
+      "show-badge": true,
+      "styleViaASS": false,
+      "styleViaXhr": false,
+      "urlInstaller": true,
+      "windowPosition": {
+        "height": 734,
+        "left": 875,
+        "top": 332,
+        "width": 975
+      },
+      "compactWidth": 850,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "w",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": false,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.links.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.options.style.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popup.search.globals": false,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1761763662397,
+    "name": "Letterboxd",
+    "sections": [
+      {
+        "code": ".twipsy {\n    display:none !important\n}",
+        "urlPrefixes": [
+          "https://letterboxd.com/films"
+        ]
+      },
+      {
+        "code": "/**.production-statistic.-lists, .production-statistic.-likes, .twipsy, #ratings-remover-show-reviews-button, .all-link, .diary-summary-by-month {\n    display: none !important;\n  }**/\n\n.ratings-histogram-chart, .attribution-block, .content-reactions-strip, .production-statistic.-likes, .rating.-nano.rated-10,.rating.-nano.rated-7,.rating.-tiny.rated-7, .poster-viewingdata span, .film-recent-reviews, #film-hq-mentions, #production-popular-lists, #recent-from-friends, .section-discovery-stream, #popular-reviews{\n    display: none !important\n}\n\n",
+        "domains": [
+          "letterboxd.com"
+        ]
+      }
+    ],
+    "updateDate": 1769848837532,
+    "_id": "95f77440-d952-4ca6-a420-14ef63f605f9",
+    "_rev": 1769848837532,
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1761821104875,
+    "name": "yts.mx",
+    "sections": [
+      {
+        "code": ".rating, .bottom-info, #movie-comments, #movie-reviews {\n    display: none\n}",
+        "domains": [
+          "yts.mx"
+        ]
+      }
+    ],
+    "updateDate": 1761821244412,
+    "_id": "10e8bfd7-0f0a-463e-ab4e-14b61b5b18c2",
+    "_rev": 1761821244412,
+    "id": 2
+  },
+  {
+    "enabled": true,
+    "installDate": 1761821372735,
+    "name": "1337xx.to",
+    "sections": [
+      {
+        "code": ".rating {\n    display:none\n}",
+        "domains": [
+          "1337xx.to"
+        ]
+      }
+    ],
+    "updateDate": 1761821425644,
+    "_id": "4aea267f-9caf-48dd-9b08-5d5f62155419",
+    "_rev": 1761821425644,
+    "id": 3
+  },
+  {
+    "enabled": true,
+    "installDate": 1763766394082,
+    "name": "pahe.ink",
+    "sections": [
+      {
+        "code": ".imdbwp__belt{\n    display: none\n}",
+        "domains": [
+          "pahe.ink"
+        ]
+      }
+    ],
+    "updateDate": 1763766394082,
+    "_id": "d7029571-f680-4fa5-8c65-501575274e81",
+    "_rev": 1763766394082,
+    "id": 5
+  },
+  {
+    "enabled": true,
+    "installDate": 1764107883445,
+    "name": "yts.bz",
+    "sections": [
+      {
+        "code": " .rating, .bottom-info, #movie-comments, #movie-reviews {\n    display: none \n}\n\n",
+        "domains": [
+          "yts.bz"
+        ]
+      }
+    ],
+    "updateDate": 1768296417996,
+    "_id": "64a6fd14-8f01-488f-9418-e7cb88055383",
+    "_rev": 1768296417996,
+    "id": 6
+  },
+  {
+    "enabled": true,
+    "installDate": 1767258285095,
+    "name": "stremio.com",
+    "sections": [
+      {
+        "code": ".label-MXv72, .icon-N_uIU{\n    display:none\n}",
+        "domains": [
+          "stremio.com"
+        ]
+      }
+    ],
+    "updateDate": 1769181848441,
+    "_id": "c224bc30-a277-434f-8de8-c1ff408aefb8",
+    "_rev": 1769181848441,
+    "id": 8
+  },
+  {
+    "enabled": true,
+    "installDate": 1767736438990,
+    "name": "themoviedb.org",
+    "sections": [
+      {
+        "code": ".consensus.tight , .auto.actions, .content_score{\n    display:none\n}",
+        "domains": [
+          "themoviedb.org"
+        ]
+      }
+    ],
+    "updateDate": 1767736582211,
+    "_id": "c23100aa-c36e-4325-b208-ec104988af4c",
+    "_rev": 1767736582212,
+    "id": 9
+  },
+  {
+    "enabled": true,
+    "installDate": 1767737362058,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           IMDb Dark Mode\n@description    Dark Mode for IMDb\n@version        1.3\n@namespace      https://github.com/Tetrax-10/imdb-dark-mode\n@author         Tetrax-10\n@license        MIT\n==/UserStyle== */\n\n@-moz-document domain(\"imdb.com\") {\n    /* colors */\n    :root {\n        --primary-bg: #181a1b;\n        --cards-bg: #2a2c2d;\n        --text-color: #cdccc9;\n        --link-color: #d3ad24;\n    }\n\n    /* dark mode */\n    :root {\n        --ipt-base-bg: var(--primary-bg); /* primary bg */\n        --ipt-baseAlt-bg: var(--primary-bg);\n        --ipc-pageSection-base-bg: var(--primary-bg); /* mobile */\n        --ipc-pageSection-baseAlt-bg: var(--primary-bg); /* mobile */\n        --ipc-listCard-base-bg: var(--cards-bg); /* cards bg */\n        --ipt-base-shade3-bg: var(--cards-bg);\n        --ipt-baseAlt-shade2-bg: var(--cards-bg);\n        --ipt-base-shade1-bg: var(--cards-bg);\n        --ipc-blockQuote-base-accent1-bg: var(--cards-bg);\n        --ipt-on-base-textPrimary-color: var(--text-color); /* text bg */\n        --ipt-on-base-textHint-color: var(--text-color);\n        --ipt-on-base-textIcon-color: var(--text-color);\n        --ipt-on-base-textSecondary-color: var(--text-color);\n        --ipt-on-base-color: var(--text-color);\n        --ipt-on-baseAlt-accent2-color: var(--link-color); /* link bg */\n        --ipt-on-base-accent2-color: var(--link-color);\n        --ipt-accent2-color: var(--link-color);\n    }\n\n    /* globals */\n    option,\n    option:hover {\n        color: var(--text-color);\n        background-color: var(--cards-bg);\n    }\n\n    /* navbar */\n    #imdbHeader {\n        --ipt-base-bg: #1e2021; /* primary bg */\n        --ipt-on-base-textPrimary-color: var(--text-color); /* text bg */\n        --ipt-on-base-textSecondary-color: var(--text-color);\n    }\n\n    /* Recently viewed */\n    .ipc-page-background--baseAlt {\n        --ipt-baseAlt-bg: var(--primary-bg); /* primary bg */\n        --ipt-baseAlt-shade2-bg: var(--cards-bg); /* cards bg */\n    }\n\n    /* movie page user review card */\n    .ipc-overflowText.ipc-overflowText--base.ipc-overflowText--listCard .ipc-overflowText-overlay {\n        background: unset;\n    }\n    /* movie page storyline card */\n    .ipc-overflowText.ipc-overflowText--base.ipc-overflowText--pageSection .ipc-overflowText-overlay {\n        background: unset;\n    }\n\n    /* list pages raing icon */\n    .ipc-rating-star--base.ipc-rating-star--currentUser .ipc-icon,\n    .ipc-rating-star--base.ipc-rating-star--rate,\n    .ipc-rating-star--base.ipc-rating-star--rate:hover {\n        color: var(--link-color);\n    }\n\n    /* back to top */\n    .ipc-scroll-to-top-button,\n    .ipc-scroll-to-top-button:hover {\n        background: var(--cards-bg);\n        color: var(--text-color) !important;\n    }\n\n    /* list edit page buttons */\n    .ipc-btn--theme-base .ipc-split-button__btn:disabled,\n    .ipc-btn--theme-base .ipc-split-button__iconBtn:disabled,\n    .ipc-btn--theme-base:not(.ipc-split-button):disabled {\n        background: var(--link-color);\n        color: var(--primary-bg);\n    }\n\n    /* advanced search */\n    /* tabs */\n    .ipc-tabs.tabs,\n    /* see results */\n    .ipc-page-background > div:has(+ .ipc-page-grid) {\n        background-color: var(--primary-bg);\n    }\n}\n",
+    "usercssData": {
+      "name": "IMDb Dark Mode",
+      "description": "Dark Mode for IMDb",
+      "version": "1.3",
+      "namespace": "https://github.com/Tetrax-10/imdb-dark-mode",
+      "author": "Tetrax-10",
+      "license": "MIT"
+    },
+    "author": "Tetrax-10",
+    "description": "Dark Mode for IMDb",
+    "name": "IMDb Dark Mode",
+    "updateUrl": "https://raw.githubusercontent.com/Tetrax-10/imdb-dark-mode/main/dark.user.css",
+    "originalDigest": "5a3fa9a0847ed65349f9230aecd25fc97444fcd3",
+    "_id": "47ceabf2-937b-405f-811c-2bd014d22aa6",
+    "_rev": 1767737362058,
+    "id": 10,
+    "etag": "W/\"dbb9d6bf38f1f492af118f941693ff93391cbd3d21193b4d263669c97007ea3c\""
+  },
+  {
+    "enabled": true,
+    "installDate": 1768650671518,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           letterboxd.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"letterboxd.com/film/\") {\n    .twipsy{\n        display: block !important\n    }\n}",
+    "usercssData": {
+      "name": "letterboxd.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "letterboxd.com",
+    "updateDate": 1768650676088,
+    "_id": "9cd34988-9dbc-4fbf-a168-ae6dafaa63f7",
+    "_rev": 1768650676088,
+    "id": 11,
+    "customName": "letterboxd.com/film"
+  },
+  {
+    "enabled": true,
+    "installDate": 1769223355685,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           www.instagram.com\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"www.instagram.com\") {\n    .x1dr59a3.x13vifvy.x7vhb2i.x6bx242, .xvhwddo, .xmnaoh6, .xc26acl > div:nth-child(-n+7), .x3h4tne  {\n        display: none\n    }\n    \n}",
+    "usercssData": {
+      "name": "www.instagram.com",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "www.instagram.com",
+    "updateDate": 1769224396468,
+    "_id": "b69ab637-2683-40da-b443-6f14c61ba6ea",
+    "_rev": 1769224396468,
+    "id": 14
+  }
+]
