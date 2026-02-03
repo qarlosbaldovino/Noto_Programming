@@ -4,6 +4,7 @@
     *   [Maketrans y translate](#id1)
     *   [For](#id1.2)
     *   [Funciones Lambda](#id1.3)
+    *   [Excepciones](#id1.4)
 2.  [Listas](#id2)
     *   [Enumerate](#id2.2)
     *   [Zip](#id2.3)
@@ -72,6 +73,85 @@ _output_
 [2, 4]
 [1, 4, 9, 16, 25]
 ```
+---
+<div id = 'id1.4'/>
+
+### **Excepciones** (_try,except,else y finally_)
+
+Las excepciones nos pueden servir para poder _"atrapar"_, anticiparnos, manejar y responder por **errores**
+
+```python
+try:
+    x = 10 / 2
+except ZeroDivisionError:
+    print("You can't divide by zero!")
+else:
+    print('Division successful:', x)
+finally:
+    print('This block always runs.')
+```
+_Acá estamos haciendo una división en **try**  y si por alguna razón dividimos por **0**, entra a la excepción y nos imprime el error. Con **finally** se imprime si o sí. Le estamos canchereando que este codigo siempre anda y nunca se rompe._
+```python
+try:
+    number = int(input('Enter a number: '))
+    result = 10 / number
+except (ValueError, ZeroDivisionError) as e:
+    print(f'Error occurred: {e}')
+```
+_Acá podemos hacer un grupo de excepciónes y darle un nombre **e**, e incluso imprimir el error que nos da el compilador._
+---
+<div id = 'id1.5'/>
+
+### **Raise**
+Con __raise__ podemos de alguna manera _"lanzar"_ nuestros propios erroes.
+
+```python
+def check_age(age):
+    if age < 0:
+        raise ValueError('Age cannot be negative')
+    return age
+
+try:
+    check_age(-5)
+except ValueError as e:
+    print(f'Error: {e}') # Error: Age cannot be negative
+```
+En este caso si la edad es menor a 0, generamos un _ValueError_
+
+```python
+def parse_config(filename):
+    try:
+        with open(filename, 'r') as file:
+            data = file.read()
+            return int(data)
+    except FileNotFoundError:
+        raise ValueError('Configuration file is missing') from None
+    except ValueError as e:
+        raise ValueError('Invalid configuration format') from e
+
+config = parse_config('config.txt')
+```
+Podemos tambien imprimir tanta el mensaje original como tambien agregarle el nuestro:
+
+• En primer caso _From None_ solo imprime nuestro mensaje.
+
+• En el segundo caso _From e_ ademas del mensaje, imprime el error del compilador.
+
+### Assert
+Tambien tenemos _assert_ que es una forma mas abreviada de _raise_ y _AssertionError_
+
+```python
+def calculate_square_root(number):
+    assert number >= 0, 'Cannot calculate square root of negative number'
+    return number ** 0.5
+
+try:
+    result = calculate_square_root(-4)
+except AssertionError as e:
+    print(f'Assertion failed: {e}')
+```
+
+
 ---
 <div id = 'id2'/>
 
