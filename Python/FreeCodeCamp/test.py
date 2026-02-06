@@ -1,5 +1,10 @@
+saldo = 0
+ledger = [{'producto': 'Lavadora', 'precio': 13},{'producto': 'PC', 'precio': 10*-1}]
 
-my_set = (1, 2, 3, 4, 5)
-my_set.add(5)
+# for precio in ledger:
+#     print(precio['precio'])
+#     saldo += precio['precio']
 
-print(my_set)
+saldo = sum(precio['precio'] for precio in ledger)
+
+print(saldo)
